@@ -5,27 +5,17 @@ body{
   height: 100vh;
 }
 
-.img-1{
-  width: 300px;
-}
-
-.img-2{
-  width: 300px;
-}
-
-.img-3{
-  width: 300px;
-}
 
 .img-4{
-  width: 300px;
   height: 450px;
 }
 
-.container{
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 550px;
 }
 
 button{
@@ -47,4 +37,15 @@ button:active{
 
 .gallery-container{
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  width: 800px;
+}
+
+.gallery-container img{
+  width: 300px;
+  position: absolute;
 }

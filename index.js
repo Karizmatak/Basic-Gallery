@@ -1,19 +1,22 @@
 let images = document.querySelectorAll(".gallery-container img");
-let index = 0;
+let galleryContainer = document.querySelector(".gallery-container");
+let index = 0; 
 
-function updateGallery(){
-  images.forEach((img, i) => {
-    let focus = (i - index) * 110;
-    if(i === index){
-    img.style.transform = `translateX(${focus}px) scale(1.4)`;
-    img.style.zIndex = '2';
-    }
-    else{
-    img.style.transform = `translateX(${focus}px) scale(1)`;
-    img.style.zIndex = '1';
-    }
-  });
-}
+function updateGallery() {
+    let imgWidth = images[0].clientWidth;
+    
+    images.forEach((img, i) => {
+        let offset = (i - index) * (imgWidth + 80);
+
+        if (i === index) {
+            img.style.transform = `translateX(${offset}px) scale(1.3)`; 
+            img.style.zIndex = "2"; 
+        } else {
+            img.style.transform = `translateX(${offset}px) scale(1)`; 
+            img.style.zIndex = "1";
+        }
+    });
+  }
 
 function left(){
   if(index > 0){
