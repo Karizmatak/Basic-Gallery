@@ -1,0 +1,50 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-1{
+  width: 300px;
+}
+
+.img-2{
+  width: 300px;
+}
+
+.img-3{
+  width: 300px;
+}
+
+.img-4{
+  width: 300px;
+  height: 450px;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button{
+  padding: 10px 16px;
+  margin: 0 10px;
+  font-size: 30px;
+  background-color: cyan;
+  border: none;
+}
+
+button:hover{
+  background-color: rgb(0, 214, 214);
+  transition: all .3s;
+}
+
+button:active{
+  background-color: cyan;
+}
+
+.gallery-container{
+  overflow: hidden;
+}
