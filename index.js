@@ -18,15 +18,21 @@ function updateGallery(){
 function left(){
   if(index > 0){
     index--;
-    updateGallery();
   }
+  else{
+    index = images.length - 1;
+  }
+  updateGallery();
 }
 
 function right(){
   if(index < images.length - 1){
     index++;
-    updateGallery();
   }
+  else{
+    index = 0;
+  }
+  updateGallery();
 }
 
 images.forEach(img => img.style.transition = "all .5s ease-in-out")
